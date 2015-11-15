@@ -3,8 +3,8 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=wiringPi
 PKG_VERSION:=2015-09-01
 PKG_RELEASE:=1
-PKG_SOURCE_PROTO:=svn
-PKG_SOURCE_URL:=http://svn.code.sf.net/p/atomproducts/svn/trunk/src/wiringPi
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_URL:=https://github.com/AtlantsEmbedded/feed-nonatlants-wiringPi.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=HEAD
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
@@ -61,7 +61,7 @@ define Package/wiringPi/install
 	cp $(PKG_BUILD_DIR)/wiringPi/*.h $(1)/usr/include/
 endef
 
-define Build/InstallDev 
+define Build/InstallDev
 	$(INSTALL_DIR) $(STAGING_DIR)/usr/include/
 	$(INSTALL_DIR) $(STAGING_DIR)/usr/lib
 	cp $(PKG_BUILD_DIR)/devLib/libwiringPiDev.so* $(STAGING_DIR)/usr/lib/libwiringPiDev.so

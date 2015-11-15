@@ -3,8 +3,8 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=DHT22_interface
 PKG_VERSION:=2014-26-14
 PKG_RELEASE:=1
-PKG_SOURCE_PROTO:=svn
-PKG_SOURCE_URL:=http://svn.code.sf.net/p/atomproducts/svn/trunk/src/DHT22_sensor
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_URL:=https://github.com/AtlantsEmbedded/feed-nonatlants-DHT22_interface.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=HEAD
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
@@ -24,7 +24,7 @@ endef
 define Package/DHT22_interface/description
 	Application which will read in the sensor data from a DHT22 sensor \
 	or rather the AM2302, which can monitor humidity and temperature data \
-	purchasable from here http://www.adafruit.com/products/393 
+	purchasable from here http://www.adafruit.com/products/393
 endef
 
 define Package/DHT22_interface/install
