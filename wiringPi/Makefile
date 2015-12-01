@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/wiringPi
 	SECTION:=libs
-	CATEGORY:=Atom-GPL
+	CATEGORY:=Atlants-GPL
 	TITLE:=wiringPi
 	SUBMENU:=Libraries
 	DEPENDS:=+libpthread

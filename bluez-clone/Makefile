@@ -22,7 +22,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/bluez-clone
 	SECTION:=libs
-	CATEGORY:=Atom-GPL
+	CATEGORY:=Atlants-GPL
 	TITLE:=Bluetooth library/tools Clone
 	SUBMENU:=Libraries
 	URL:=http://www.bluez.org/
