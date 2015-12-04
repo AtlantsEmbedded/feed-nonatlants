@@ -7,7 +7,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=i2c-tools
+PKG_NAME:=i2c-tools-clone
 PKG_VERSION:=2013-12-15
 PKG_RELEASE:=1
 
