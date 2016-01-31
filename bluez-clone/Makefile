@@ -50,6 +50,9 @@ define Package/bluez-clone/install
 	$(CP) $(PKG_BUILD_DIR)/tools/hciattach $(1)/bin
 	$(CP) $(PKG_BUILD_DIR)/tools/hciconfig $(1)/bin
 	$(CP) $(PKG_BUILD_DIR)/tools/rfcomm $(1)/bin
+	$(CP) $(PKG_BUILD_DIR)/tools/hcitool $(1)/bin
+	$(CP) $(PKG_BUILD_DIR)/tools/l2ping $(1)/bin
+	$(CP) $(PKG_BUILD_DIR)/tools/ciptool $(1)/bin
 	$(CP) $(PKG_BUILD_DIR)/tools/sdptool $(1)/bin
 	$(CP) $(PKG_INSTALL_DIR)/usr/lib/libbluetooth.so.* $(1)/usr/lib/
 endef
